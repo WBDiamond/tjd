@@ -1,0 +1,15 @@
+{
+  "name": "RJD",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "scripts/index.js",
+  "author": "Roman",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel pages/index.html",
+    "build": "parcel build pages/index.html"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

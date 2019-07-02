@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'RussianRail';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../public/fonts/RussianRail_G_Regular.otf');
+}
+
+@font-face {
+    font-family: 'FSRail';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../public/fonts/FSRAIL55.otf');
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header div:last-child {
+    margin-right: 20px;
+}
+
+.headerDiv a:not(:last-child) {
+    margin-right: 60px;
+}
+
+.headerDiv {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+article {
+    font-family: 'FSRail', serif;
+    color: #7e7e7e;
+    max-width: 760px;
+    line-height: 1.5;
+    font-size: 19px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.headerDiv a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-family: 'RussianRail', serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+@media (max-width: 880px) {
+    .headerDiv a:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .headerDiv a {
+        font-size: 12px;
+    }
+}
+
+.headers {
+    width: 250px;
+}
+
+.header {
+    font-family: 'RussianRail', serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+main {
+    max-width: 1680px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: 48px;
+}
+
+.logoContainer {
+    display: flex;
+    height: 160px;
+    width: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.monument {
+    cursor: grab;
+    height: 624px;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.hamburger {
+    display: none;
+    margin-right: 35px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hamburgerImg {
+    width: 27px;
+}
+
+.appLinks a {
+    color: #000000;
+}
+
+.appLinks {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    font-family: 'FSRail', serif;
+    max-width: 400px;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+.menuModal {
+    font-family: 'FSRail Thin', serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 5;
+    margin-right: 0 !important;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 3px 10px 0 #ccc;
+}
+
+.menuModal span {
+    width: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.menuModal a {
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.menuModal img {
+    width: 16px;
+    margin-right: 15px;
+}
+
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0 !important;
+    margin-top: 50px;
+}
+
+.menuContent a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .monument {
+        height: 405px;
+    }
+    .header {
+        font-size: 12px;
+    }
+    .logo {
+        width: 77px;
+        height: 35px;
+    }
+    .logoContainer {
+        height: 88px;
+        width: 110px;
+        margin-left: 15px;
+    }
+    .headers {
+        max-width: 190px;
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
+        margin-right: 24px;
+    }
+
+    .links {
+        display: none;
+    }
+}
+
+.imageDiv {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    width: 100vw;
+}
+
+.footerLogo {
+    margin-right: 25px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0 #ccc;
+    height: 70px;
+    width: 70px;
+}
+
+footer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    footer {
+        justify-content: flex-start;
+    }
+}
+
+footer span {
+    margin-right: 25px;
+}
+
+.stores {
+    tab-index: 0;
+    width: 100px;
+}
+
+.stores a {
+    display: block;
+    width: 100px;
+}
+
+.stores img {
+    width: 100px;
+}
